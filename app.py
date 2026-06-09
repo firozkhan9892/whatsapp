@@ -7,8 +7,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-
-VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "myverify123")
+VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "myverifytoken")  
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
